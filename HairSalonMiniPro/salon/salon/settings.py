@@ -40,6 +40,7 @@ INSTALLED_APPS = [
      "crispy_forms",
     'EasyBarber',
     'django_filters',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -126,8 +127,8 @@ MEDIA_URL='/media/'
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
-
-CRISPY_TEMPLATE_PACK="bootstrap4"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
